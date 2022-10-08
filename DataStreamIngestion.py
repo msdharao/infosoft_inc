@@ -2,7 +2,6 @@ class DataStream:
     def __init__(self):
         self.tstamp: int = None
         self.datastring: str = None
-        self.result_list : list = []
     def should_output_data_str(self, timestamp:int, data_string:str)->bool:
         if self.datastring!= data_string:
             self.datastring = data_string
